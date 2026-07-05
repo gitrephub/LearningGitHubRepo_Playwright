@@ -1,0 +1,13 @@
+{
+  "homePage": {
+    "newCarsLink": "page.getByRole('link', { name: /new cars/i }).first()",
+    "tataLink": "page.locator('a[href*=\"/tata/\"]', { hasText: 'Tata' }).first()"
+  },
+  "newCarsPage": {
+    "searchInput": "page.getByPlaceholder(/search/i).first()",
+    "tataNexonLink": "page.locator('a').filter({ hasText: /tata nexon/i }).first()"
+  },
+  "carDetailsPage": {
+    "onRoadPriceLink": "page.locator('a').filter({ hasText: /on road price/i }).first()"
+  }
+}
